@@ -1,67 +1,64 @@
 # ruby-bot
 
-This is the project #3 of the Ruby Curriculum in Microverse
+This is the project of the Ruby Curriculum in Microverse
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+Capstone Project
 
-## ruby twitter bot
+# ruby-bot
 
-This project consists of a Ruby version of the game [Tic Tac Toe](https://en.wikipedia.org/wiki/Tic-tac-toe).
+A Telegram Bot built with Ruby
 
-## Getting Started
+- This is a telegram bot that can display hello message in most used languages across the world randomly.
 
-### Prerequisites
-To run this project, you need a computer with Ruby installed.
-> If you are uncertain on how to install Ruby, check out this [tutorial](https://www.theodinproject.com/courses/ruby-programming/lessons/installing-ruby-ruby-programming) made by [The Odin Project](https://www.theodinproject.com/about).
+## Getting started
 
-### How to Play
-#### In your local enviroment:
+- To run the ruby-bot you must have Ruby install on your computer. You can downloand and install Ruby from the link below.
+- windows [Ruby installer](https://rubyinstaller.org/).
+- MAC and LINUX [Ruby official site](https://www.ruby-lang.org/en/downloads/).
 
-1. Clone the repository:
-```
-https://github.com/VanessaAoki/TicTacToe.git
-```
-1. cd into the folder bin
+## Once Ruby is download and installed, please follow the instructions bellow
 
-2. Execute the file by using `$ main` on the terminal;
+### 1- Clone the repo in your local folder where you want to run it
 
-3. Enter your moves on the terminal and enjoy the game!
+- Run the command below in your terminal
+`git clone https://github.com/DsunilK/ruby-bot.git`.
 
-#### Live server:
+### 2- Install bundle
 
-1. If you prefer, you can run the game on your web browser by clicking on this [link](https://repl.it/@VanessaAoki/TicTacToe#main.rb);
+- Run `bundle install` to install the gems from the `Gemfile`.
 
-2. Click on the green button that says 'Run' at the top of the page to start the tic tac toe game;
+### 3- Download telegram and create a bot
 
-3. Enter your moves on the terminal and enjoy the game!
+- Download the [Telegram app](https://desktop.telegram.org/), create an account.
+- Launch  [Botfather](https://t.me/botfather). Follow the instructions to create a bot.
+- You will then receive an API Token that looks like this: `1256478963:BBCHKATY496166theonsgankgngnrorgnorg`
 
-### Game Rules
+### 4- Run the bot
 
-1. Tic tac toe is a 2-player game, X and O;
+- Run `ruby bin/bot.rb` to start the bot.
+- Open the link to the bot that you've got from the Botfather.
 
-2. Players alternate turns to choose a move on a 3x3 grid, like this one:
-```
-1 | 2 | 3
------------
-4 | 5 | 6	--> This is the tic tac toe board
------------
-7 | 8 | 9 
-```
-3. The first player to secure three consecutive positions on a row, column or diagonal wins;
+## How to use the bot
 
-4. The end games in a tie if neither player has won and all positions on the board are taken.
+This Bot has five commands
 
-## Screenshot of the output
+- [x] /start - It start the bot, and the bot says Welcome.
+- [x] /greet- It display greeting message randomly in different languages.
 
-![screenshot](./screen_shots/win.png)
-![screenshot](./screen_shots/draw.png)
+## The ruby-bot live link
+
+- You can click [Here](https://t.me/microgreet_bot)
+
 ## Built With
 
 - Ruby
-- Visual Studio, Git & GitHub
+- Telegram API
+- Dotenv
+- Rubocop
+- VsCode
 
-
-## Authors
+## Author
 
 🧑‍💻 **Sunil Kumar**
 
@@ -69,19 +66,15 @@ https://github.com/VanessaAoki/TicTacToe.git
 - Linkedin: [@DsunilK](https://www.linkedin.com/in/dsunilk/)
 - Twiter: [@DsunilK](https://twitter.com/D_sunil_K)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/VanessaAoki/TicTacToe/issues).
-
+Feel free to check the [issues page](https://github.com/DsunilK/ruby-bot/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
