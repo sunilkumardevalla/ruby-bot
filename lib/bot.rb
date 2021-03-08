@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
 require 'telegram/bot'
-require_relative 'messages.rb'
-
+require_relative 'messages'
+# class bot
 class Bot
   def initialize
     @token = '1631929196:AAFj5IPu_d83nMnodtwiaq_thFgip854QaU'
     @commands = Messages.new
     Telegram::Bot::Client.run(@token) do |bot|
-    bot.listen do |reply|
-      case command
+      bot.listen do |reply|
+        case command
         when /start/i
           reply.text = 'All I can do is say hello. Try the /greet command.'
         when /greet/i
@@ -18,9 +18,9 @@ class Bot
         else
           reply.text = "I have no idea what #{command.inspect} means."
         end
-          puts "sending #{reply.text.inspect} to @#{message.from.username}"
-          reply.send_with(bot)
-        end
+        puts "sending #{reply.text.inspect} to @#{message.from.username}"
+        reply.send_with(bot)
       end
+    end
   end
 end
