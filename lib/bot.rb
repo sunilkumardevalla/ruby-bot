@@ -6,7 +6,7 @@ require_relative 'messages'
 class Bot
   def initialize
     @token = '1631929196:AAFj5IPu_d83nMnodtwiaq_thFgip854QaU'
-    @commands = Messages.new
+    command = Messages.new
     Telegram::Bot::Client.run(@token) do |bot|
       bot.listen do |reply|
         case command
@@ -18,8 +18,6 @@ class Bot
         else
           reply.text = "I have no idea what #{command.inspect} means."
         end
-        puts "sending #{reply.text.inspect} to @#{message.from.username}"
-        reply.send_with(bot)
       end
     end
   end
