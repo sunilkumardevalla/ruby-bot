@@ -41,7 +41,7 @@ A Telegram Bot built with Ruby
 
 ## How to use the bot
 
-This Bot has five commands
+This Bot has two commands
 
 - [x] /start - It start the bot, and the bot says Welcome.
 - [x] /greet- It display greeting message randomly in different languages.
