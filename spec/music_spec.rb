@@ -116,4 +116,4 @@ describe Music do
     end
   end
 end
-# rubocop:enable Lint/LiteralInInterpolation
+

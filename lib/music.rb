@@ -46,8 +46,8 @@ class Music
       'https://www.youtube.com/watch?v=H2Po5uiZMco&list=RDCLAK5uy_mVRuj5egfh21e-pXyA3ymx_0p4Xlg-c0I&index=4'
     ]
   end
-  # rubocop:enable Lint/LiteralInInterpolation
-
+  #rubocop:enable Lint/LiteralInInterpolation
+  
   def music_select(category)
     @result = category.sample
   end

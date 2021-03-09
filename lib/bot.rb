@@ -32,7 +32,7 @@ class Bot
         case message.text
         when '/music'
           answers = Telegram::Bot::Types::ReplyKeyboardMarkup
-          .new(keyboard: [%w[Romantic Techno], %w[Rock Hip-Hop]], one_time_keyboard: true)
+            .new(keyboard: [%w[Romantic Techno], %w[Rock Hip-Hop]], one_time_keyboard: true)
           bot.api.send_message(chat_id: message.chat.id, text: 'Select your choice from Below', reply_markup: answers)
         when 'Romantic'
           bot.api.send_message(chat_id: message.chat.id, text: @music.music_select(@music.romantic))
