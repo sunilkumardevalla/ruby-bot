@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../lib/bot.rb'
+require_relative '../lib/bot'
 
 puts 'Hello there!'
 puts 'Nice to meet you'

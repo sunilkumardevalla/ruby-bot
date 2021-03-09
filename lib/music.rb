@@ -1,8 +1,10 @@
 # frozen_string_literal: true
-require_relative 'bot.rb'
 
+require_relative 'bot'
+
+# Class music contain library
 class Music
-  attr_reader :romantic, :techno, :rock, :hiphop 
+  attr_reader :romantic, :techno, :rock, :hiphop
 
   def initialize
     @romantic = [
@@ -55,7 +57,7 @@ class Music
       'start_message' => "Hello I'm Chocsun bot that going to give you soulfull music. Type /help to go",
       'commands' => "Here is how you can do: \n /start \n /stop \n /music \n /help",
       'wrong_entry' => "Wrong entry, please enter from above available options:/start \n /music \n /stop \n /help",
-      'stop_message' => 'Sorry to see you go, See you again',
+      'stop_message' => 'Sorry to see you go, See you again'
     }
   end
 end

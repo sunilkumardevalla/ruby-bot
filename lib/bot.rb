@@ -2,7 +2,8 @@
 
 require 'telegram/bot'
 require_relative 'music'
-
+# rubocop:disable Lint/LiteralInInterpolation
+# main class Bot
 class Bot
   def initialize
     @token = '1682878047:AAF3ggkgyy6iF1La72qk4RC8pS8qETNHLts'
@@ -32,7 +33,7 @@ class Bot
         case message.text
         when '/music'
           answers = Telegram::Bot::Types::ReplyKeyboardMarkup
-            .new(keyboard: [%w[Romantic Techno], %w[Rock Hip-Hop]], one_time_keyboard: true)
+                    .new(keyboard: [%w[Romantic Techno], %w[Rock Hip-Hop]], one_time_keyboard: true)
           bot.api.send_message(chat_id: message.chat.id, text: 'Select your choice from Below', reply_markup: answers)
         when 'Romantic'
           bot.api.send_message(chat_id: message.chat.id, text: @music.music_select(@music.romantic))
@@ -49,3 +50,4 @@ class Bot
     end
   end
 end
+# rubocop:enable Lint/LiteralInInterpolation
