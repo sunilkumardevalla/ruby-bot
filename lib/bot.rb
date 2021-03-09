@@ -1,7 +1,6 @@
 require 'telegram/bot'
 require_relative 'music'
 
-# rubocop:disable Lint/LiteralInInterpolation
 # main class Bot
 class Bot
   def initialize
@@ -49,4 +48,3 @@ class Bot
     end
   end
 end
-# rubocop:enable Lint/LiteralInInterpolation
