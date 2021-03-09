@@ -1,7 +1,6 @@
-# frozen_string_literal: true
-
 require_relative 'bot'
 
+# rubocop:disable Lint/LiteralInInterpolation
 # Class music contain library
 class Music
   attr_reader :romantic, :techno, :rock, :hiphop
@@ -61,3 +60,4 @@ class Music
     }
   end
 end
+# rubocop:enable Lint/LiteralInInterpolation

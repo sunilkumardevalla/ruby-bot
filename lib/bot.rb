@@ -1,7 +1,6 @@
-# frozen_string_literal: true
-
 require 'telegram/bot'
 require_relative 'music'
+
 # rubocop:disable Lint/LiteralInInterpolation
 # main class Bot
 class Bot
