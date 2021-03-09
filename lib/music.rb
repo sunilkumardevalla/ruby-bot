@@ -4,7 +4,7 @@ require_relative 'bot'
 # Class music contain library
 class Music
   attr_reader :romantic, :techno, :rock, :hiphop
-
+  # rubocop:disable Lint/LiteralInInterpolation 
   def initialize
     @romantic = [
       'https://www.youtube.com/watch?v=lp-EO5I60KA&list=PL64G6j8ePNureM8YCKy5nRFyzYf8I2noy',
@@ -46,6 +46,7 @@ class Music
       'https://www.youtube.com/watch?v=H2Po5uiZMco&list=RDCLAK5uy_mVRuj5egfh21e-pXyA3ymx_0p4Xlg-c0I&index=4'
     ]
   end
+  # rubocop:enable Lint/LiteralInInterpolation
 
   def music_select(category)
     @result = category.sample

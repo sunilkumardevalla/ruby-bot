@@ -1,5 +1,6 @@
 require_relative '../lib/music'
 
+#rubocop:disable Lint/LiteralInInterpolation
 describe Music do
   let(:music) { Music.new }
 
@@ -115,3 +116,4 @@ describe Music do
     end
   end
 end
+# rubocop:enable Lint/LiteralInInterpolation
