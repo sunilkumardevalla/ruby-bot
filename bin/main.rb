@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require_relative '../lib/messages'
-require_relative '../lib/bot'
+require_relative '../lib/bot.rb'
 
-puts 'Hello There, Do you want to see how hilariosly i can greet you'
+puts 'Hello there!!'
+puts 'Nice to meet you'
+puts "I'm Chocsun bot, and I'm going to help you play random music for you, the choice is up to you."
 
 Bot.new
