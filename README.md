@@ -40,7 +40,7 @@ This project consist Telegram Bot, Which plays selected music of your choice fro
 
 ### 📝 How to interact with the bot?
 
-- When the program is running go to your page of telegram
+- When the program is running on your terminal as mentioned in above step, please follow below steps.
 
 - Search for in your browser: https://t.me/Chocsun_bot
 
