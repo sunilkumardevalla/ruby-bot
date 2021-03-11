@@ -18,6 +18,10 @@ This project consist Telegram Bot, Which plays selected music of your choice fro
 
 [Issue link](https://github.com/DsunilK/ruby-bot/issues)
 
+## Video Explanation of Project
+
+[Loom Video Link](https://www.loom.com/share/aba0ccdc5fde4479b7a3964f2abbff1c)
+
 ## 🔧 Getting Started
 
 > To get started, follow below steps.
