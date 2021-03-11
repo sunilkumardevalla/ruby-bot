@@ -18,7 +18,7 @@ This project consist Telegram Bot, Which plays selected music of your choice fro
 
 [Issue link](https://github.com/DsunilK/ruby-bot/issues)
 
-## Video Explanation of Project
+## Video Explanation of Capstone Project
 
 [Loom Video Link](https://www.loom.com/share/aba0ccdc5fde4479b7a3964f2abbff1c)
 
@@ -40,7 +40,7 @@ This project consist Telegram Bot, Which plays selected music of your choice fro
   `bundle install`
 - Run the program with this code :
   `bin/main.rb`
-- Stop the program with: "Ctrl + C" (Windows or Linux) or "Command + C"(Apple)
+- Stop the program with: "Ctrl + C" (Windows or Linux) or "Command + C"(Apple).
 
 ### 📝 How to interact with the bot?
 
